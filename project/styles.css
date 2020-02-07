@@ -1,3 +1,45 @@
 body {
     background-color: #1C5D99;
+    max-width: 960px;
+    margin:auto;
+    text-align: center;
 }
+
+p {
+    background-color: #C2CAE8;
+    color: #53A2BE;
+    padding: 50px;
+}
+
+h1, h2 {
+    color: rgb(255, 140, 40);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C2CAE8;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #1C5D99;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #8789C0;
+  }
+
+  .social a {
+    padding: 16px;
+  }
+
