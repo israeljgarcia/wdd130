@@ -1,45 +1,45 @@
 body {
-    background-color: #53A2BE;
-    font-family: 'Times New Roman', 'Georgia', 'Arial';
-    font-size: 18px;
-    padding: 20px;
-    margin:auto;
-    text-align: left;
+  background-color: #53a2be;
+  font-family: "Times New Roman", "Georgia", "Arial";
+  font-size: 18px;
+  padding: 20px;
+  margin: auto;
+  text-align: left;
 }
 
 header {
-	padding: 5px 0;
-	display: flex;
-	align-items:center;
-	justify-content:center;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header img {
-	width: 125px;
-	height: auto;
+  width: 125px;
+  height: auto;
 }
 
 .headings {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .heading h1 {
-  font-family: 'Knewave', 'Times New Roman', 'Georgia';
-	font-size: 2rem;
-	color: #C2CAE8;
-	margin: 0;
+  font-family: "Knewave", "Times New Roman", "Georgia";
+  font-size: 2rem;
+  color: #c2cae8;
+  margin: 0;
 }
 
 .motto {
-	font-style: italic;
-	color: rgb(193, 195, 236);
-	font-size: 1rem;
-	letter-spacing: 1.5pt;
+  font-style: italic;
+  color: rgb(193, 195, 236);
+  font-size: 1rem;
+  letter-spacing: 1.5pt;
 }
 
-.banner-box img{
-  width:100%; 
+.banner-box img {
+  width: 100%;
   padding-bottom: 10px;
   height: auto;
 }
@@ -48,14 +48,14 @@ header img {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-  
+
 .banner-box img {
   grid-column: 1 / -1;
   grid-row: 1;
 }
-  
+
 .action {
-  font-family: 'Knewave', 'Times New Roman', 'Georgia';
+  font-family: "Knewave", "Times New Roman", "Georgia";
   font-size: 30px;
   grid-column: 1;
   grid-row: 1;
@@ -64,7 +64,7 @@ header img {
   padding-bottom: 1em;
   text-align: center;
 }
-  
+
 .action button {
   line-height: 2em;
   width: 10em;
@@ -109,10 +109,10 @@ header img {
 }
 
 .home-left-img img,
-.home-right-img img{
-    border: 1px solid #ccc;
-    padding: 1px;
-    box-shadow: 5px 5px 5px rgb(80, 80, 80);
+.home-right-img img {
+  border: 1px solid #ccc;
+  padding: 1px;
+  box-shadow: 5px 5px 5px rgb(80, 80, 80);
 }
 
 .home-grid {
@@ -122,73 +122,166 @@ header img {
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
-  grid-template-areas: 
-  "home-headline1 home-headline1 home-headline1 home-right-img home-right-img"
-  ". home-paragraph1 home-paragraph1 home-right-img home-right-img"
-  ". home-paragraph1 home-paragraph1 . ."
-  "home-left-img home-left-img home-headline2 home-headline2 home-headline2"
-  "home-left-img home-left-img . home-paragraph2 home-paragraph2"
-  ". . . home-paragraph2 home-paragraph2"
-  "home-paragraph3 home-paragraph3 home-paragraph3 home-paragraph3 home-paragraph3"
-  ;
+  grid-template-areas:
+    "home-headline1 home-headline1 home-headline1 home-right-img home-right-img"
+    ". home-paragraph1 home-paragraph1 home-right-img home-right-img"
+    ". home-paragraph1 home-paragraph1 . ."
+    "home-left-img home-left-img home-headline2 home-headline2 home-headline2"
+    "home-left-img home-left-img . home-paragraph2 home-paragraph2"
+    ". . . home-paragraph2 home-paragraph2"
+    "home-paragraph3 home-paragraph3 home-paragraph3 home-paragraph3 home-paragraph3";
 }
 
 section {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 p {
-    background-color: #C2CAE8;
-    color: #53A2BE;
-    padding: 1em;
-    line-height: 1.6;
+  background-color: #c2cae8;
+  color: #53a2be;
+  padding: 1em;
+  line-height: 1.6;
 }
 
-h1, h2 {
-  font-family: 'Knewave', 'Times New Roman', 'Georgia';
+h1 {
+  font-family: "Knewave", "Times New Roman", "Georgia";
+  color: rgb(255, 140, 40);
+  font-size: 48px;
+}
+h2 {
+  font-family: "Knewave", "Times New Roman", "Georgia";
   color: rgb(255, 140, 40);
   font-size: 36px;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #C2CAE8;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c2cae8;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #1c5d99;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #8789c0;
+}
+
+.rivers-grid {
+  padding: 20x;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-gap: 10px;
+}
+
+.rivers-headline1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: auto;
+}
+
+.rivers-headline2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+}
+
+.rivers-headline3 {
+  grid-column-start: 3;
+  grid-column-end: auto;
+  grid-row-start: 5;
+  grid-row-end: auto;
+}
+
+.rivers-headline4 {
+  grid-column-start: 1;
+  grid-column-end: auto;
+  grid-row-start: 7;
+  grid-row-end: auto;
+}
+
+.rivers-paragraph1 {
+  grid-column-start: auto;
+  grid-column-end: auto;
+  grid-row-start: 2;
+  grid-row-end: auto;
+}
+
+.rivers-paragraph2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: auto;
+}
+
+.rivers-paragraph3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: auto;
+}
+
+.rivers-paragraph4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: auto;
+}
+
+.rivers-left-image1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: auto;
+}
+
+.rivers-left-image2 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 8;
+  grid-row-end: auto;
+}
+
+.rivers-right-image1 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: auto;
+}
+
+.footer {
+  float: left;
+}
+
+.social {
+  float: right;
+}
+
+.social a {
+  padding: 16px;
+}
+
+footer {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .home-grid {
     display: block;
-    color: #1C5D99;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
   }
-  
-  li a:hover {
-    background-color: #8789C0;
-  }
-
-  .footer {
-    float: left;
-  }
-
-  .social {
-    float: right;
-  }
-
-  .social a {
-    padding: 16px;
-  }
-
-  @media screen and (max-width: 550px) {
-    .home-grid {
-      display: block;
-    }
-  }
+}
