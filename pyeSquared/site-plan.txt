@@ -1,0 +1,35 @@
+Purpose
+It has always been my dream to have my own technology company.
+The purpose of this website is to inform people about my tech 
+company called Pye Squared. Pye Squared focuses on software 
+products that are catered to user experience. Simple UI enables 
+users to learn to use a software quickly. Although the UI is simple, our 
+software's functionality is complex allowing users to have 
+a powerful, but easy to use application. 
+
+This website showcases our current projects, company goals,
+and how to contact us.
+
+Target Audience 
+My target audience for this website is small/medium sized 
+businesses that need small/medium sized web applications 
+to be built for them. This will target businesses that need 
+to move their services online. This will also target individuals
+who need a web presense to get their business off the ground.
+I am mainly targetting clients who need to provide an online service.
+
+Color Scheme
+#5770FF - Blue Accents
+#5743E8 - Blue Accents
+#FF7081 - Red Accents
+White - Main Color
+Black - Paragraph Text
+Fonts: <style>
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+</style>
+
+font-family: 'Source Code Pro', monospace;
+
+Other font: Ariel / San Serif font
+
+Domain name: pyexpye.com (Pye Squared)
