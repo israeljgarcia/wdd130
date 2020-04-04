@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: rgb(221, 221, 221);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+  background-color: rgb(241, 236, 236);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  font-family: Arial Bold, Helvetica, sans-serif;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(172, 172, 172);
+}
+
+.logo {
+  float: left;
+  padding: 5px;
+}
+
+.carousel-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.home-carousel {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.carousel-container img {
+  display: inline;
+  float: none;
+  width: 800px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.carousel-text {
+  font-family: "Source Code Pro", monospace, Arial;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;
+}
+
+.home-div1 {
+  display: block;
+  float: left;
+  width: 30%;
+  margin-left: 10%;
+}
+
+.home-div2 {
+  display: block;
+  float: right;
+  width: 30%;
+  margin-right: 10%;
+}
+
+footer {
+  font-size: medium;
+  width: 100%;
+  margin-top: 300px;
+}
+
+.stamp {
+  float: left;
+  padding-right: 60%;
+}
+
+.social {
+  float: right;
+}
+
+.about-head-1 {
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+}
+
+.about-head-2 {
+  float: right;
+  width: 40%;
+  margin-right: 5%;
+  margin-top: 20%;
+}
+
+.about-head-3 {
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+
+form {
+  /* Center the form on the page */
+  margin: auto;
+  margin-top: 5%;
+  width: 80%;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+form ul {
+  list-style: none;
+  padding-bottom: 10%;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+.contact-name {
+  margin-right: 400px;
+}
+
+.contact-email {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-right: 400px;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: block;
+  width: 90px;
+  margin-left: 33%;
+  text-align: center;
+}
+
+.contact-message label {
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+  border-radius: 4px;
+  resize: none;
+}
+
+.message-label {
+  margin-left: 368px;
+}
+
+textarea {
+  width: 850px;
+  height: 600px;
+  margin-right: 50px;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  margin-right: 120px;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+  margin-left: 526px;
+  margin-top: 5%;
+}
+
+#feedback {
+  display: none;
+  border: 1px solid rgb(138, 241, 98);
+  border-radius: 1em;
+  text-align: center;
+  width: 50%;
+  margin: 5px auto;
+  padding: 4px;
+}
