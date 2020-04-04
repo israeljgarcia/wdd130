@@ -3,5 +3,108 @@
   <head>
     <meta />
     <title>Pye Squared | Contact</title>
+    <link rel="stylesheet" href="pyeSquared.css" />
   </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="navigation">
+          <li class="logo">
+            <img
+              src="/images/pyeSquared.png"
+              alt="pye squared logo"
+              width="60"
+            />
+          </li>
+          <li class="logo">
+            <img
+              src="/images/pyeSquaredText.png"
+              alt="text that says pye squared"
+              width="220"
+            />
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="feedback"></div>
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li class="contact-name">
+          <label for="name">Name</label>
+          <input id="input-name" type="text" id="name" name="user_name" />
+        </li>
+        <li class="contact-email">
+          <label for="mail">E-mail</label>
+          <input id="input-email" type="email" id="mail" name="user_mail" />
+        </li>
+        <li>
+          <label class="message-label" for="msg">Message</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <button type="submit">Submit</button>
+      </ul>
+    </form>
+    <footer>
+      <div class="stamp">
+        &copy; 2020 Pye Squared | Israel Garcia | WDD 130 - Web Fundamentals
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com">
+          <img
+            src="/images/instagram_PNG3.png"
+            alt="instagram icon"
+            height="25"
+            width="25"
+          />
+        </a>
+
+        <a href="https://fb.com">
+          <img
+            src="/images/facebook-icon.png"
+            alt="facebook icon"
+            height="25"
+            width="25"
+          />
+        </a>
+
+        <a href="https://www.tiktok.com">
+          <img src="/images/tiktok-icon.png" alt="tiktok icon" height="25" />
+        </a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById("feedback");
+    // get the form element so we can read what was entered in it.
+    const formElement = document.forms[0];
+
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener("submit", function (e) {
+      // stop the form from doing the default action
+      e.preventDefault();
+      // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+
+      if (
+        document.getElementById("input-name").value.length != 0 &&
+        document.getElementById("input-email").value.length != 0 &&
+        document.getElementById("msg").value.length != 0
+      ) {
+        feedbackElement.innerHTML =
+          "Hello " +
+          formElement.user_name.value +
+          "! Thank you for your message. We will get back with you as soon as possible!";
+        // make the feedback element visible.
+        feedbackElement.style.border = "1px solid green";
+        feedbackElement.style.display = "block";
+      } else {
+        feedbackElement.innerHTML = "Please do not leave any field empty.";
+        feedbackElement.style.border = "1px solid red";
+        feedbackElement.style.display = "block";
+      }
+    });
+  </script>
 </html>
