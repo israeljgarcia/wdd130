@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pye Squared | Contact</title>
     <link rel="stylesheet" href="pyeSquared.css" />
   </head>
@@ -15,8 +16,6 @@
               alt="pye squared logo"
               width="60"
             />
-          </li>
-          <li class="logo">
             <img
               src="/images/pyeSquaredText.png"
               alt="text that says pye squared"
@@ -30,23 +29,22 @@
       </nav>
     </header>
     <div id="feedback"></div>
-    <form action="/my-handling-form-page" method="post">
-      <ul>
-        <li class="contact-name">
-          <label for="name">Name</label>
-          <input id="input-name" type="text" id="name" name="user_name" />
-        </li>
-        <li class="contact-email">
-          <label for="mail">E-mail</label>
-          <input id="input-email" type="email" id="mail" name="user_mail" />
-        </li>
-        <li>
-          <label class="message-label" for="msg">Message</label>
-          <textarea id="msg" name="user_message"></textarea>
-        </li>
-        <button type="submit">Submit</button>
-      </ul>
-    </form>
+
+    <div>
+      <form class="contact-form" action="/my-handling-form-page" method="post">
+
+        <label class="contact-label1" for="name">Name</label>
+        <input class="contact-input1" id="input-name" type="text" id="name" name="user_name" />
+
+        <label class="contact-label2" for="mail">E-mail</label>
+        <input class="contact-input2" id="input-email" type="email" id="mail" name="user_mail" />
+
+        <label class="contact-label3" class="message-label" for="msg">Message</label>
+        <textarea class="contact-textbox1" id="msg" name="user_message"></textarea>
+
+        <button class="contact-button" type="submit">Submit</button>
+      </form>
+    </div>
     <footer>
       <div class="stamp">
         &copy; 2020 Pye Squared | Israel Garcia | WDD 130 - Web Fundamentals
