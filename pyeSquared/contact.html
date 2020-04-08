@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,13 +33,13 @@
     <div>
       <form class="contact-form" action="/my-handling-form-page" method="post">
 
-        <label class="contact-label1" for="name">Name</label>
-        <input class="contact-input1" id="input-name" type="text" id="name" name="user_name" />
+        <label class="contact-label1">Name</label>
+        <input class="contact-input1" id="input-name" type="text" name="user_name" />
 
-        <label class="contact-label2" for="mail">E-mail</label>
-        <input class="contact-input2" id="input-email" type="email" id="mail" name="user_mail" />
+        <label class="contact-label2">E-mail</label>
+        <input class="contact-input2" id="input-email" type="email" name="user_mail" />
 
-        <label class="contact-label3" class="message-label" for="msg">Message</label>
+        <label class="contact-label3" for="msg">Message</label>
         <textarea class="contact-textbox1" id="msg" name="user_message"></textarea>
 
         <button class="contact-button" type="submit">Submit</button>
@@ -73,36 +73,36 @@
         </a>
       </div>
     </footer>
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById("feedback");
+      // get the form element so we can read what was entered in it.
+      const formElement = document.forms[0];
+  
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener("submit", function (e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+  
+        if (
+          document.getElementById("input-name").value.length != 0 &&
+          document.getElementById("input-email").value.length != 0 &&
+          document.getElementById("msg").value.length != 0
+        ) {
+          feedbackElement.innerHTML =
+            "Hello " +
+            formElement.user_name.value +
+            "! Thank you for your message. We will get back with you as soon as possible!";
+          // make the feedback element visible.
+          feedbackElement.style.border = "1px solid green";
+          feedbackElement.style.display = "block";
+        } else {
+          feedbackElement.innerHTML = "Please do not leave any field empty.";
+          feedbackElement.style.border = "1px solid red";
+          feedbackElement.style.display = "block";
+        }
+      });
+    </script>
   </body>
-  <script>
-    // get the feedback div element so we can do something with it.
-    const feedbackElement = document.getElementById("feedback");
-    // get the form element so we can read what was entered in it.
-    const formElement = document.forms[0];
-
-    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-    formElement.addEventListener("submit", function (e) {
-      // stop the form from doing the default action
-      e.preventDefault();
-      // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-
-      if (
-        document.getElementById("input-name").value.length != 0 &&
-        document.getElementById("input-email").value.length != 0 &&
-        document.getElementById("msg").value.length != 0
-      ) {
-        feedbackElement.innerHTML =
-          "Hello " +
-          formElement.user_name.value +
-          "! Thank you for your message. We will get back with you as soon as possible!";
-        // make the feedback element visible.
-        feedbackElement.style.border = "1px solid green";
-        feedbackElement.style.display = "block";
-      } else {
-        feedbackElement.innerHTML = "Please do not leave any field empty.";
-        feedbackElement.style.border = "1px solid red";
-        feedbackElement.style.display = "block";
-      }
-    });
-  </script>
 </html>
